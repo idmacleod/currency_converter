@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fx: {},
             amount: null,
             currency1: "EUR",
-            currency2: "EUR"
+            currency2: "CAD"
         },
         methods: {
             fetchFx: function () {

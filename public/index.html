@@ -20,7 +20,7 @@
         </select>
     </span> to <span>
         <select name="currency2" id="currency2" v-model="currency2">
-            <option value="EUR">EUR</option>
+            <option v-for="(rate, currency) in fx.rates" :value="currency">{{currency}}</option>
         </select>
     </span></p>
     <p>Result: </p>
