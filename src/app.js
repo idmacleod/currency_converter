@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         el: '#app',
         data: {
             appName: "vueFX",
-            fx: {}
+            fx: {},
+            amount: null,
+            currency1: "EUR",
+            currency2: "EUR"
         },
         methods: {
             fetchFx: function () {
