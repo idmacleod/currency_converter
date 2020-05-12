@@ -14,7 +14,8 @@
     </header>
     <p>Convert <span>
         <input type="number" name="amount" id="amount" v-model.number="amount">
-    </span> from <span>
+    </span>
+    <span>
         <select name="currency1" id="currency1" v-model="currency1">
             <option value="EUR">EUR</option>
         </select>
@@ -23,7 +24,7 @@
             <option v-for="(rate, currency) in fx.rates" :value="currency">{{currency}}</option>
         </select>
     </span></p>
-    <p>Result: </p>
+    <p>Result: {{convertedAmount}}</p>
 </body>
 </div>
 </html>

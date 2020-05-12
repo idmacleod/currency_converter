@@ -20,6 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         mounted: function () {
             this.fetchFx();
+        },
+        computed: {
+            fxRate: function () {
+                if (this.currency1 === "EUR") {
+                    return this.fx.rates[this.currency2];
+                }
+            },
+            convertedAmount: function () {
+                if (this.amount) {
+                    return this.amount * this.fxRate;
+                }
+            }
         }
     })
 })
