@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', monospace;
+    font-size: 200%;
+}
+
+input, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input {
+    width: 6rem;
+}
